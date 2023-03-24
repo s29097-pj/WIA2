@@ -8,9 +8,9 @@ Przedmiot składa się z 8 laboratoriów. Na koniec semestru odbywa się jedno k
 
 ## Rozliczanie zadań
 Zadania można również dosyłać do następnego spotkania na adres: 
-- > mhyla@pjwstk.edu.pl , w temacie maila umieszczając > *PD_WIA2_2023* 
-- Zadania przesyłać w oddzielnych plikach *.asm* 
-- Nie przesyłać pików *.zip* i innych skompresowanych folderów 
-- Pliki *.com* nie przejdą przez Gmaila.
+- >'hyla@pjwstk.edu.pl', w temacie maila umieszczając '>*PD_WIA2_2023*'
+- Zadania przesyłać w oddzielnych plikach '*.asm*' 
+- Nie przesyłać pików '*.zip*' i innych skompresowanych folderów 
+- Pliki '*.com*' nie przejdą przez Gmaila.
 
 Link do zadań znajduje się pod adresem <https://mhyla.com/courses/WIA2/niestacjonarne/>
