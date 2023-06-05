@@ -2,7 +2,7 @@
 
 **01.** Napisz program obliczający wzór (skorzystaj z notacji postfiksowej): `a * b + c`
 
-**02.** Napisz program obliczający wzór (skorzystaj z notacji postfiksowej): `2𝑎 + 2𝑏 − 2𝑐`
+**02.** Napisz program obliczający wzór (skorzystaj z notacji postfiksowej): `2a + 2b − 2c`
 
 **03.** Napisz program obliczający wzór (skorzystaj z notacji postfiksowej): `a / b + c`
 

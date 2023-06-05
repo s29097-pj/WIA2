@@ -1,23 +1,29 @@
-org 100h
+; W tym kodzie jest wykonywane równanie ((a * b) + c),
+; gdzie a = 1, b = 3, c = 5.
 
-; a * b + c
-; a b * c +
 
-push word [a]
-push word [b]
-pop AX
-pop BX
-mul BX
-push AX			; a * b
+org 100h        ; Ustala adres początkowy kodu na 100h
 
-push word [c]
-pop AX
-pop BX
-add AX, BX		; a * b + c
+push word [a]   ; Umieszcza wartość z pamięci pod adresem 'a' na stosie
+push word [b]   ; Umieszcza wartość z pamięci pod adresem 'b' na stosie
 
-mov AH, 00h
-int 21h
+pop ax          ; Zdejmuje wartość ze stosu i przenosi ją do rejestru AX
+pop bx          ; Zdejmuje wartość ze stosu i przenosi ją do rejestru BX
 
-a dw 01h
-b dw 03h
-c dw 05h
+mul bx          ; Mnoży wartość rejestru AX przez wartość rejestru BX
+
+push ax         ; Umieszcza wynik mnożenia na stosie
+
+push word [c]   ; Umieszcza wartość z pamięci pod adresem 'c' na stosie
+
+pop ax          ; Zdejmuje wartość ze stosu i przenosi ją do rejestru AX
+pop bx          ; Zdejmuje wartość ze stosu i przenosi ją do rejestru BX
+
+add ax, bx      ; Dodaje wartość rejestru BX do wartości rejestru AX
+
+mov ah, 00h     ; Ustawia wartość rejestru AH na 00h (kod operacji)
+int 21h         ; Wywołuje przerwanie 21h (int 21h) - wykonuje operację systemową
+
+a dw 01h        ; Definiuje zmienną 'a' jako dwubajtową (word) o wartości 01h (wartość dziesiętna: 1)
+b dw 03h        ; Definiuje zmienną 'b' jako dwubajtową (word) o wartości 03h (wartość dziesiętna: 3)
+c dw 05h        ; Definiuje zmienną 'c' jako dwubajtową (word) o wartości 05h (wartość dziesiętna: 5)
