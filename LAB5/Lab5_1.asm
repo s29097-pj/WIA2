@@ -1,3 +1,7 @@
+; W tym kodzie jest wykonywane równanie a + b + c,
+; gdzie a = 5, b = 3, c = 255, a y przechowuje wynik równania.
+
+
 org 0100h ; Ustawia początkowy adres w pamięci programu na 0100h
 
 mov ax, [a] ; ax = 05h, a = 05h (wartość dziesiętna: 5)
